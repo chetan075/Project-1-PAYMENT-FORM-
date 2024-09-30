@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <style>
+      body {
+        text-align: center;
+        text-decoration-color: aliceblue;
+        /* background-image: url(Screenshot (36).png); */
+      }
+    </style>
+  </head>
+  <body>
+    <form action="new.html" method="get">
+      <fieldset>
+        <h1>PAYMENT FORM</h1>
+        <hr />
+        <p>REQUIRED FIELDS ARE FOLLOWED BY*</p>
+
+        <h1>CONTACT INFORMATION</h1>
+        <hr />
+        <br />
+        <label for="Name">NAME:*</label>
+        <input type="text" id="Name" placeholder="Enter the NAME" required />
+        <br />
+        <br />
+        <fieldset>
+          <legend>GENDER*</legend>
+          <label for="MALE">MALE</label>
+          <input type="radio" id="MALE" name="drone" required />
+          <label for="FEMALE">FEMALE</label>
+          <input type="radio" id="FEMALE" name="drone" required />
+        </fieldset>
+        <br />
+        <address>
+          <label for="address"
+            >ADDRESS: <textarea rows="5" cols="50" required></textarea>
+          </label>
+          <!-- <input type="text" id="address" /> -->
+        </address>
+        <br />
+        <label for="EMAIL">EMAIL:*</label>
+        <input type="email" id="email" required />
+        <br />
+        <br />
+        <label for="PINCODE">PINCODE:*</label>
+        <input type="number" id="PINCODE" required />
+        <h1>PAYMENT INFORMATION</h1>
+        <label for="CARD TYPE">CARD TYPE:*</label>
+        <select
+          name="CARD TYPE"
+          id="CARD TYPE"
+          aria-placeholder="-Select a Card Type-"
+        >
+          <option value="Visa">Visa</option>
+          <option value="Master Card">Master Card</option>
+          <option value="Rupay">Rupay</option>
+        </select>
+        <br />
+        <br />
+        <label for="CARD NUMBER">CARD NUMBER:*</label>
+        <input type="number" id="CARD NUMBER" required />
+        <br />
+        <br />
+        <label for="EXPIRATION DATE">EXPIRATION DATE:*</label>
+        <input
+          type="date"
+          id="EXPIRATION DATE"
+          name="trip-start"
+          value="2018-07-22"
+          min="2018-01-01"
+          max="2025-12-31"
+          required
+        />
+        <br />
+        <br />
+        <label for="CVV">CVV:*</label>
+        <input type="number" name="CVV" id="CVV" required />
+        <br />
+        <br />
+        <label for="Pay Now">Pay Now</label>
+        <input type="submit" class="styled" required />
+      </fieldset>
+    </form>
+  </body>
+</html>
